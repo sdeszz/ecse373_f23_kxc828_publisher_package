@@ -26,6 +26,7 @@
  */
 // %Tag(FULLTEXT)%
 // %Tag(ROS_HEADER)%
+#include "publisher_package/topic_name.h"
 #include "ros/ros.h"
 // %EndTag(ROS_HEADER)%
 // %Tag(MSG_HEADER)%
@@ -80,7 +81,7 @@ int main(int argc, char **argv)
    * buffer up before throwing some away.
    */
 // %Tag(PUBLISHER)%
-  ros::Publisher chatter_pub = n.advertise<std_msgs::String>("publisher_topic", 1000);
+  ros::Publisher chatter_pub = n.advertise<std_msgs::String>("topic_name", 1000);
 // %EndTag(PUBLISHER)%
 
 // %Tag(LOOP_RATE)%
